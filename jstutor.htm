@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript DOM Tutorial</title>
+    </head>
+    <body>
+        <ul id = "menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+        </ul>
+        <script>
+            let div = document.createElement("div");
+            div.innerHTML= "<p>Welcome to Document Object Model Tutorial</p>";
+            console.log(div);
+            let menu = document.getElementById("menu");
+            let list = document.createElement("li");
+            list.innerHTML = "Projects";
+            menu.appendChild(list);
+        </script>
+    </body>

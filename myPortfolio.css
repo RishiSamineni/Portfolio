@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,200;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('headwall.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color:cornsilk;
+}
+.Name{
+    width: 150px;
+}
+.Name::first-letter{
+    font-size: larger;
+    color: rgba(255, 64, 0, 0.842);
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('headwall.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 11px 20px;
+}
+nav ul li a{
+    color: cornsilk;
+    text-decoration: none;
+    font-size: 21px;
+    position: relative;
+    cursor: pointer;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgba(255, 64, 0, 0.842);
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.7s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+#home-text{
+    margin-top: 15%;
+    font-size: 33px;
+}
+#home-text img{
+    float: right;
+    border-radius: 51%;
+}
+.home-passage{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.btn-field{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.btn-field button{
+    background-color: rgba(255, 64, 0, 0.842);
+    height: 35px;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    color:cornsilk;
+}
+#About-Me img{
+    float: left;
+    margin: 0;
+    padding: 2px 2px 2px 2px;
+}
+.friend img{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin: 0;
+    padding: 2px 2px 2px 2px;
+}
+#Skills{
+    box-sizing: border-box;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+figcaption{
+    text-align: center;
+    font-style: italic;
+}
+em{
+    background-color: rgba(209, 96, 10, 0.87);
+    opacity: 0.5;
+}
+iframe{
+    border: none;
+}
+#Internships p{
+    font-size: 23px;
+    font-style: italic;
+}
+#Contact img{
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}

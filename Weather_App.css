@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(230, 59, 12, 0.968);
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+}
+
+.weather-app{
+    background-color: white;
+    max-width: 700px;
+    margin: 70px auto;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid rgba(246, 255, 0, 0.959);
+    box-shadow: 0 0 25px rgba(246, 255, 0, 0.959);
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 20px;
+    border: 2px solid rgba(230, 59, 12, 0.968);
+    border-radius: 15px;
+    font-size: 1rem;
+    background: transparent;
+}
+::placeholder{
+    color: rgba(230, 59, 12, 0.968);
+}
+
+.search-btn{
+    background-color:rgba(230, 59, 12, 0.968);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.search-btn:hover {
+    background-color: rgba(194, 80, 14, 0.559);
+}
+
+.city-date-section{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.city-date-section .city{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+.city-date-section .date{
+    background-color: rgba(246, 255, 0, 0.959);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.temperature-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.temperature-info .temp{
+    font-size: 10rem;
+}
+.temperature-info .description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.temperature-info .description i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.temperature-info .description span{
+    font-size: 1.5rem;
+}
+.additional-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info{
+    background-color: rgba(128, 129, 123, 0.959);
+    box-shadow: rgba(38, 39, 36, 0.959);
+    width: 150px;
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+.additional-info .material-icons{
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.wind-info div, .humidity-info div, .visibility-info div{
+    text-align: center;
+}
+
+input:focus{
+    flex: 1;
+    padding: 20px;
+    border: 2px solid rgba(246, 255, 0, 0.959);
+    border-radius: 15px;
+    font-size: 1rem;
+    background: transparent;
+}
