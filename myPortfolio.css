@@ -29,6 +29,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: sticky;
 }
 .container{
     padding-right: 10%;
@@ -41,7 +42,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
+    position: fixed;
 }
 nav ul li{
     display: inline-block;
